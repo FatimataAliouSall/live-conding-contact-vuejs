@@ -13,4 +13,8 @@ export default defineConfig({
       { find: '@views', replacement: fileURLToPath(new URL('./src/views', import.meta.url)) },
     ],
   },
+  server: {
+    host: '0.0.0.0', 
+    port: 5173, 
+  },
 })
